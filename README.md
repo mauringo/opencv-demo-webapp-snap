@@ -1,3 +1,6 @@
+
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/opencv-demo-webapp)
+
 # opencv-demo-webapp-snap
 
 This webapp has been created to show up the basic components needed to 
