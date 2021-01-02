@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+
+#this script runs once at the installation. place your code below
+echo "You are installing the app"
+
+cp -a $SNAP/bin/pythoncode/*  $SNAP_DATA/
+
+
+echo "hello" > "$SNAP_DATA/hello.conf"

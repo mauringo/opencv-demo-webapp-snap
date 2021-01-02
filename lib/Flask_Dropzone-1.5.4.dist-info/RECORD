@@ -1,0 +1,12 @@
+Flask_Dropzone-1.5.4.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+Flask_Dropzone-1.5.4.dist-info/LICENSE.txt,sha256=urWe6H0ZCLXr2ZalRweug84-k_8wYWjAXq28Xc9aWsg,1085
+Flask_Dropzone-1.5.4.dist-info/METADATA,sha256=fkB8kGV7W-fvscWh4KF_JMYxJV9be0Ywn_hD4Mweexk,2352
+Flask_Dropzone-1.5.4.dist-info/RECORD,,
+Flask_Dropzone-1.5.4.dist-info/WHEEL,sha256=53VSps8MltPLN_x9Ib61FU2ZSaJKzgrWQqu9rS-Dkgk,116
+Flask_Dropzone-1.5.4.dist-info/top_level.txt,sha256=tnmF1XttbqOTalmDk8Ple8B9lemHMKPzXFl96tCdVKE,15
+flask_dropzone/__init__.py,sha256=0N1m6v6xPaL7F6vTjHhMK3UyABF-kEi5Jr3Nd6uGE2Q,20192
+flask_dropzone/__pycache__/__init__.cpython-38.pyc,,
+flask_dropzone/__pycache__/utils.cpython-38.pyc,,
+flask_dropzone/static/dropzone.min.css,sha256=C1uHyYDGrQDAk1IbmtnkXnXT_u3PkM9wh0hkpLMhy8U,9718
+flask_dropzone/static/dropzone.min.js,sha256=k394u1_NWzM2OVjwVumG22a0prnevsijOBBv3JrDlx4,42791
+flask_dropzone/utils.py,sha256=NjwzumNnlEOFWJ5l-nkZhiJ1-ph61N0yEzx8baMu4Gc,708

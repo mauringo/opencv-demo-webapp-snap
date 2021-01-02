@@ -1,0 +1,92 @@
+name: opencv-demo-webapp
+base: core18
+version: '0.1'
+summary: OpenCV webAPP example, python based. active on port 33443.
+description:  |
+     Install the app and navigate to http://yourDeviceIp:33443. The app uses your webcam to 
+     implement some simple image vision algorithm, the result is then streamed inside a webpage.
+     
+confinement: strict
+grade: stable
+
+apps:
+
+
+  flask-server:
+    command: sh $SNAP/bin/runserver.sh
+    plugs: [network, network-bind, mount-observe, network-observe, camera, system-observe, bluetooth-control, joystick, x11]
+    daemon: simple
+    environment:
+       "LD_LIBRARY_PATH": "$LD_LIBRARY_PATH:$SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/lapack:$SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/blas"
+  desktop-launch:
+    command: bin/desktop-launch
+    plugs:
+      - desktop
+
+  info:
+    command: sh $SNAP/bin/info.sh
+    plugs: [network, network-bind, mount-observe, network-observe, system-observe, bluetooth-control]
+
+
+
+parts:
+
+  requests:
+    plugin: python
+    python-version: python3
+    python-packages: [requests]
+    build-packages:
+      - python3-dev
+      - build-essential
+
+  ai:
+    plugin: nil
+    stage-packages:
+      - python3-numpy
+      - libzbar0
+      - libzbar-dev
+      - libpsm-infinipath1
+      - python3-opencv
+      - python3-matplotlib
+      - python3-pandas
+
+  barcodes:
+    plugin: python
+    python-version: python3
+    python-packages: [pyzbar]
+    build-packages:
+       - python3-dev
+       - build-essential
+
+
+
+  flask:
+    plugin: python
+    python-version: python3
+    python-packages: [flask]
+    build-packages:
+      - python3-dev
+      - build-essential
+
+ 
+      
+
+  python-libs:  
+    source: ./lib/
+    plugin: dump
+    organize:
+      '*': /lib/python3.6/site-packages/
+
+  python-code:  
+    source: ./pythoncode/
+    plugin: dump
+    organize:
+      '*': bin/pythoncode/
+
+  shscripts:  
+    source: ./shscripts/
+    plugin: dump
+    organize:
+      '*': bin/
+
+

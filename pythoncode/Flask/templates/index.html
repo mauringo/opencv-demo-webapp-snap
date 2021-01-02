@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="author" content="mauringo"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>OpenCV-Demo</title>
+    <!-- Import favicon -->
+    <link rel="icon" href="./assets/icon.png"/>
+    <!-- Import stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./libs/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <!-- Import library scripts -->
+    <script src="./libs/jquery-3.4.1.min.js"></script>
+    <script src="./libs/popper.min.js"></script>
+    <script src="./libs/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
+  <body >
+
+   
+   
+    <div class="container-fluid ">
+      <div class="row vertical-spacing ">
+        <div class="col-sm"></div>
+        <div class="col-sm-center">
+          <img class="rounded mx-auto responsive img-responsive" style="height:8em" src="./assets/Logo.png"/>
+       
+        </div>
+        <div class="col-sm"></div>
+      </div>
+    </div>
+    
+    <div class="container-fluid vertical-spacing ">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          
+          
+          <div class="text-center">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" onclick=releaseCameras() class="btn btn-secondary">Release Camera</button>
+            <button type="button" onclick=restartCameras() class="btn btn-secondary">Restart Camera</button>
+           
+          </div>
+          <p>After any camera restart reload the page.</p>
+        </div>
+       
+        </div>
+        <div class="col-sm-2">
+          
+          
+       
+        </div>
+      </div>
+    </div>
+   
+    
+    <div class="container-fluid vertical-spacing ">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          
+          
+          
+          
+          <div class="text-center">
+            <h3 class="mt-5">Live Streaming</h3>
+            <img src="{{ url_for('video_feed1') }}" class="img-fluid" alt="Responsive image" >
+          </div>
+       
+        </div>
+        <div class="col-sm-2">
+          
+          
+       
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid vertical-spacing ">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          
+          
+          <div class="text-center">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" onclick=setCameraMode(1,0) class="btn btn-secondary">Normal Camera</button>
+            <button type="button" onclick=setCameraMode(1,1) class="btn btn-secondary">Circle Detection</button>
+            <button type="button" onclick=setCameraMode(1,2) class="btn btn-secondary">Face Detection</button>
+            <button type="button" onclick=setCameraMode(1,3) class="btn btn-secondary">QRCODE/BARCODE</button>
+            <button type="button" onclick=setCameraMode(1,4) class="btn btn-secondary">Plants Monitoring</button>
+          </div>
+        </div>
+       
+        </div>
+        <div class="col-sm-2">
+          
+          
+       
+        </div>
+      </div>
+    </div>
+   
+    
+
+    
+    
+  </body>
+  <!-- Site footer -->
+ <!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 vertical-double-spacing">2020 - Mauro
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+</html>

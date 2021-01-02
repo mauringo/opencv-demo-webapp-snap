@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+#this script runs once at the removing. place your code below
+echo "You are removing the app"

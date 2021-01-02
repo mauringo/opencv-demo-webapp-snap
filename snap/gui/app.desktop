@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Rexroth-Python-Edge-Dev 
+Comment=Low-code programming for event-driven applications
+Exec=python-x-app.desktop-launch
+Icon=${SNAP}/meta/gui/icon.png
+Terminal=false
+Categories=Development;

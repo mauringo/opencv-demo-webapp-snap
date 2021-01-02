@@ -1,0 +1,5 @@
+Place here your python site-packages 
+
+follow this guide https://python-forum.io/Thread-Install-a-library-manually
+
+the entire folder will be copied to the right python folder inside the snap

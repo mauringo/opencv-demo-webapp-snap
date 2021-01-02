@@ -1,0 +1,25 @@
+.vertical-spacing {
+  margin-bottom: 2em;
+}
+
+.vertical-double-spacing {
+  margin-top: 3em;
+}
+
+.bottom-spacing {
+  margin-bottom: 1em;
+}
+
+.countour-spacing {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.logo {
+  margin: 2em;
+}
+
+.code-text-area {
+  
+  height: 50em;
+}
