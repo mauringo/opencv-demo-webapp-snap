@@ -45,7 +45,6 @@ parts:
       - python3-numpy
       - libzbar0
       - libzbar-dev
-      - libpsm-infinipath1
       - python3-opencv
       - python3-matplotlib
       - python3-pandas
